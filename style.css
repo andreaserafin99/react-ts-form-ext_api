@@ -1,0 +1,20 @@
+@import 'primereact/resources/themes/saga-blue/theme.css';
+@import 'primereact/resources/primereact.min.css';
+@import 'primeicons/primeicons.css';
+h1,
+p {
+  font-family: Lato;
+}
+
+.input-span {
+  margin: 2rem;
+}
+
+.tabsOnTop,
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 2rem;
+}
