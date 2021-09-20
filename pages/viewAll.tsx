@@ -17,12 +17,26 @@ function ViewAll<viewAllProps, viewAllState>(props) {
           subTitle={el.name}
           style={{ width: '25rem', marginBottom: '2em' }}
         >
-          <div>
+          <div className="user-info-card">
             <span>
               Email: <b>{el.email}</b>
             </span>
             <span style={{ marginLeft: '2em' }}>
-              Age: <b>{el.phone}</b>
+              Phone: <b>{el.phone}</b>
+            </span>
+
+            <span>
+              WebSite: <a href={el.website}>{el.website}</a>
+            </span>
+
+            <span className="user-info-card">
+              Address:
+              <span>city: {el.address.city}</span>
+              <span>street: {el.address.street}</span>
+              <span>suite: {el.address.suite}</span>
+              <span>zipcode: {el.address.zipcode}</span>
+              <span>Latitude: {el.address.geo.lat}</span>
+              <span>longitude: {el.address.geo.lng}</span>
             </span>
           </div>
         </Card>
